@@ -34,3 +34,15 @@ python predict_yolo.py
 ```
 
 The result will be under the folder 'runs/detect/' and 'predict-{n}'.
+
+## Objective and Methods
+The YOLO model is widely used in image detection, image segmentation and various computer vision tasks. For the purpose of this project, we use it for image detection on 3 classes.
+To annotate the custom datasets, we used [Label Studio](https://labelstud.io/).
+
+## Results and Analysis
+The YOLO model not only predicts the classes that we assigned it to, but also create a box bound along with associated probability to tell the object that it detected inside the box.
+We used the model YOLO11 but the latest version is YOLO26 that we did not use for this project.
+
+As we see in the result folder 'runs/detect/predict-{n}', we have respectfully the boxes and the label.
+A further fine-tuning or parameter-tuning could help bring more precision to the result.
+However, the datasets is small and the model is already giving a good rendering.

@@ -12,6 +12,11 @@ We selected images from the datasets containing the following classes:
  - train
 
 ## How to run?
+First, we need to install the library 'ultralytics' in order to run the pretrained YOLO model:
+```python
+pip install ultralytics
+```
+
 To re-run the model, use:
 ```python
 python train.py

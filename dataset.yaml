@@ -1,6 +1,15 @@
-train: /home/supercell/Desktop/YOLO_project/train
-val: /home/supercell/Desktop/YOLO_project/val
+# Dataset root directory
+path: .
 
+# Dataset splits
+train: train/images
+val: val/images
+
+# Number of classes
 nc: 3
 
-names: ["car", "person", "train"]
+# Class names
+names:
+  0: car
+  1: person
+  2: train

@@ -1,0 +1,6 @@
+train: /home/supercell/Desktop/YOLO_project/train
+val: /home/supercell/Desktop/YOLO_project/val
+
+nc: 3
+
+names: ["car", "person", "train"]

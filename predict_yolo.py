@@ -16,6 +16,9 @@
 
 from pathlib import Path
 from ultralytics import YOLO
+import torch
+
+torch.backends.cudnn.enabled = False
 
 # Get the directory containing this script
 PROJECT_DIR = Path(__file__).resolve().parent
@@ -27,7 +30,8 @@ IMAGE_PATH = (
     PROJECT_DIR
     / "val"
     / "images"
-    / "9827778906_f6e78c7551_z.jpg"
+    #    / "9827778906_f6e78c7551_z.jpg"
+    / "pizza.jpg"
 )
 
 # Load model

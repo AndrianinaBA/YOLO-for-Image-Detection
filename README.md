@@ -1,8 +1,13 @@
 This repository serves as the Final Project for Computer Vision in Computer, for the class M2 in MAFI and Maths Struct at the University of Antananarivo.
 Also, it contributes as an initiation into the rich field of Computer Vision by using Image Detection.
 
-## Base Model
+## Base Model and Technique used
 This project uses [YOLO11](https://docs.ultralytics.com/models/yolo11/) for object detection.
+The base model is then trained using transfer learning/fine-tuning to classify a subset of classes that we specify beforehand.
+
+## Members
+ - RAZAFINDRAKOTO Mialimanana Andrianina Bien-Aimé: M2 Maths Struct/ M2 MAFI
+ - RANDRIAMBOLA Faliana Beanjarasoa: M2 MAFI
 
 ## Datasets
 The model was trained using a custom dataset derived from the [COCO (Common Objects in Context) dataset](https://cocodataset.org/).

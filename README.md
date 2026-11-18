@@ -18,12 +18,12 @@ We selected images from the datasets containing the following classes:
 
 ## How to run?
 First, we need to install the library 'ultralytics' in order to run the pretrained YOLO model:
-```python
+```bash
 pip install ultralytics
 ```
 
 To re-run the model, use:
-```python
+```bash
 python train.py
 
 ```
@@ -39,7 +39,7 @@ IMAGE_PATH = (
 )
 ```
 And run:
-```python
+```bash
 python predict_yolo.py
 ```
 
@@ -56,3 +56,6 @@ We used the model YOLO11 but the latest version is YOLO26 that we did not use fo
 As we see in the result folder 'runs/detect/predict-{n}', we have respectfully the boxes and the label.
 A further fine-tuning or parameter-tuning could help bring more precision to the result.
 However, the datasets is small and the model is already giving a good rendering.
+
+In addition to that, to verify that the transfer learning is working as expected, we added a prediction of an image that is not defined for the 3 classes, 'pizza.jpg'.
+The result of the prediction is as expected, the model does not recognize any of the predefined classes and we see no boundary boxes in the image.
